@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List</h1>
+
+    <% if(users.length === 0) { %>
+        <p>No users added yet.</p>
+    <% } else { %>
+        <ul>
+            <% users.forEach(user => { %>
+                <li><%= user %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <br>
+    <a href="/">Add More Users</a>
+</body>
+</html>
